@@ -1,0 +1,111 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html"/>
+    <title>NFV Cross-Layer Diagnosis</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"/>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../sdn.css"/>
+    <script src="../sdn.js"></script>
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/sdn">SDN&NFV</a>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container content">
+    <h1>NFV Cross-Layer Diagnosis</h1>
+    <blockquote>
+        <p>
+            Quality of Service (QoS) is so critical in the telecom domain. There is an underlying service expection
+            that outrages will be below milliseconds. Service impacting outrages beed to be limited to a certain amount
+            of users and network wide outrages are not acceptable for telecom providers. Furthermore, service
+            continuity is not only customer expectations, but often a regulatory requirement, as telecommunication
+            networks are considered to be part of critical national infrastructures. However, not every Network
+            Function has the same requirements for resiliency. For example, telephony usually has the highest
+            requirement for availability, while short messaging service may have lower requirement. Thus, multiple
+            availability  classes will be designed which should be supported by a Network Function Virtualization (NFV)
+            framework.
+        </p>
+        <p>
+            The virtualization of Network Functions needs to fulfill top-level design criteria, including: Service
+            Continuity, Automated Recovery, No Single Point of Failure, Multi-Vendor Environment and Hybrid
+            Infrastructure.
+        </p>
+    </blockquote>
+
+    <h2>Fault Injection</h2>
+    <blockquote>
+        <p>
+            Fault Injection is an important part of the overall diagnosis. In order to comprehensively compare proposed
+            method against existing methods, we have to test it on various faults, including hardware faults, software
+            faults and configuration error. However, according to our survey, there are no such comprehensive work about
+            fault injection in OpenStack. Most of current diagnosis works uses several so called typical errors. Thus,
+            we're going to build a fault injection framework, which is able inject particular faults, test OpenStack
+            functions and restore machine's original state. Our work can be divided into three parts: fault injection,
+            Function testing and machine restoration.
+        </p>
+    </blockquote>
+
+    <h2>Fast Error Locating</h2>
+    <blockquote>
+        <p>
+            Although OpenStack already has certain mechanisms to locate errors, it's still insufficient for some
+            common errors. For example, when requesting a VM on Horozon, there is an error indicating that no
+            available compute node for requested VM. However, the dashboard does indicate that there are compute nodes.
+            Similar errors is common in production. To solve those misleading errors, administrators have to spend
+            huge amount of time in checking logs. While checking logs seems OK for data centers, it definitely
+            intolerable for telecom communication networks. Errors are required to fixed as quick as possible. So,
+            it is vital to find a method which is able to fast locate original errors.
+        </p>
+    </blockquote>
+
+    <h2>Failure Prediction</h2>
+    <blockquote>
+        <p>
+            Simply design a system locating original error is far less than enough to meet the the needs in industrial
+            requirements. As mentioned above, reliability is one of the most import requirements for telecom products.
+            It is required for us to detect potential or minor faults before it evolves to fatal errors. Thus, it is
+            important to design a system which is able to monitor the whole system in realtime, giving out realtime
+            health report.
+        </p>
+    </blockquote>
+
+    <div class="row">
+        <div class="col-md-4">
+            <h2>People</h2>
+            <ul>
+                <li>Libin Song (Northwestern University)</li>
+                <li>Xue Leng (Zhejiang University)</li>
+                <li>Yinbo Yu (Wuhan University)</li>
+                <li>Kai Bu (Zhejiang University)</li>
+                <li><a href="http://www.cs.northwestern.edu/~ychen/"> Yan Chen (Northwestern University)</a></li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <h2>Collaborators</h2>
+            <ul>
+                <li>Jianfeng Yang (Wuhan University, China)</li>
+                <li>Xiaolin Chen (Chuxiong Normal University, China)</li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <h2>Alumni</h2>
+            <ul>
+                <li><a href="http://www.cs.northwestern.edu/~xwe334/">Xitao Wen (Northwestern University)</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html"/>
+    <title>RuleScope</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"/>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../sdn.css"/>
+    <script src="../sdn.js"></script>
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/sdn">SDN&NFV</a>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container content">
+    <h1>RuleScope</h1>
+    <blockquote>
+        <p>
+            Due to hardware and software problems, the dataplane state
+            may not be congruent to the configuration specifications of
+            the control plane in software defined networks. There is a
+            pressing need for data plane mechanisms that can detect and
+            identify offending forwarding rules.
+        </p>
+        <p>
+            In this project, we rigorously
+            define the test packet generation problem that detects
+            and identifies priority faults of forwarding rules, missing
+            rules and unexpected rules. Unlike prior work ATPG and
+            ProboScope which present partial solutions, we present the
+            complete framework, RuleScope. At the heart of RuleScope
+            is the probling packet generation algorithms which minimize
+            the number of rounds and the number of probing packets.
+            We also characterize the complexity and show the number
+            of probing packets can be exponential if a single round is
+            required.
+        </p>
+    </blockquote>
+
+
+    <h2>Publication</h2>
+    <ul>
+        <li>
+            Kai Bu, Xitao Wen, Bo Yang, Yan Chen, Li Erran Li, Xiaolin Chen,
+            <a href="papers/infocom16.pdf">
+                <i>"Is Every Flow on The Right Track?: Inspect SDN Forwarding with RuleScope"</i>
+            </a>, in the Proc. of <i>IEEE INFOCOM</i>, 2016.
+        </li>
+        <li>
+            Xitao Wen, Kai Chen, Yan Chen, Yongqiang Liu, Yong Xia, Chengchen Hu,
+            <a href="papers/virtualKnotter_ICDCS12.pdf">
+                <i>"VirtualKnotter: Online Virtual Machine Shuffling for Congestion Resolving in Virtualized
+                    Datacenter"</i>
+            </a>, in Proceedings of <i>IEEE ICDCS</i>, Macau, China, June 2012.
+        </li>
+    </ul>
+
+    <div class="row">
+        <div class="col-md-4">
+            <h2>People</h2>
+            <ul>
+                <li><a href="http://www.cs.northwestern.edu/~xwe334/">Xitao Wen (Northwestern University)</a></li>
+                <li>Bo Yang (Zhejiang University)</li>
+                <li>Kai Bu (Zhejiang University)</li>
+                <li><a href="http://www.cs.northwestern.edu/~ychen/"> Yan Chen (Northwestern University)</a></li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <h2>Collaborators</h2>
+            <ul>
+                <li><a href="http://erranlli.appspot.com/">Li Erran Li</a> (Bell Labs, Alcatel-Lucent)</li>
+                <li>Xiaolin Chen (Chuxiong Normal University, China)</li>
+            </ul>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+
+</div>
+</body>
+</html>

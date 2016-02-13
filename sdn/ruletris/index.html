@@ -1,0 +1,92 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html"/>
+    <title>RuleTris</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"/>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../sdn.css"/>
+    <script src="../sdn.js"></script>
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/sdn">SDN&NFV</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container content">
+
+    <h1>RuleTris</h1>
+    <blockquote>
+        <p>
+            Modular composition in software-defined networks ensures
+            the correctness of independently deployed applications.
+            It enables modular application development
+            and the deployment of "best of breed" solutions by
+            picking independent components (e.g. firewall, traffic
+            monitor). Current modular composition techniques are
+            not optimal in terms of both the number of rule updates
+            to the data plane switches and the latency cost of
+            individual updates.
+        </p>
+        <p>
+            In this project, we design RuleTris, an end-to-end
+            optimization framework for modular composition in
+            software-defined networks. We identify the dependency
+            graph, which captures concise rule dependencies, as
+            the key abstraction to minimize the latency cost of
+            policy updates all the way to physical switches. We
+            present efficient dependency preserving algorithms that
+            incrementally build rule dependency along with the
+            compilation process. We show how to map the incremental
+            changes of dependency graphs to flow tables in
+            physical switches. We have fully implement RuleTris.
+            Our hardware experiment demonstrates that RuleTris
+            outperforms the state of the art composition compiler
+            CoVisor by ~20 times in terms of per rule update
+            latency on TCAM.
+        </p>
+    </blockquote>
+
+
+    <h2>Publication</h2>
+    <ul>
+        <li>
+            Xitao Wen, Chunxiao Diao, Xun Zhao, Yan Chen, Li Erran Li, Bo Yang, Kai Bu,
+            <a href="papers/compact_update_hotsdn.pdf">
+                <i>"Compiling Minimum Incremental Update for Modular SDN Languages"</i>
+            </a>, in Proceedings of <i>HotSDN 2014</i>, Chicago, IL, August 2014.
+        </li>
+    </ul>
+
+    <div class="row">
+        <div class="col-md-4">
+            <h2>People</h2>
+            <ul>
+                <li><a href="http://www.cs.northwestern.edu/~xwe334/">Xitao Wen (Northwestern University)</a></li>
+                <li>Chunxiao Diao (Northwestern University)</li>
+                <li>Bo Yang (Zhejiang University)</li>
+                <li>Kai Bu (Zhejiang University)</li>
+                <li><a href="http://www.cs.northwestern.edu/~ychen/"> Yan Chen (Northwestern University)</a></li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <h2>Collaborators</h2>
+            <ul>
+                <li><a href="http://erranlli.appspot.com/">Li Erran Li</a> (Bell Labs, Alcatel-Lucent)</li>
+                <li><a href="http://nskeylab.xjtu.edu.cn/people/cchu">Chengchen Hu</a> (Xi'an Jiaotong University)</li>
+                <li>Xun Zhao (Tsinghua University)</li>
+            </ul>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html"/>
+    <title>SDNShield</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"/>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../sdn.css"/>
+    <script src="../sdn.js"></script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/sdn">SDN&NFV</a>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container content">
+
+    <h1>SDNShield</h1>
+    <blockquote>
+        <p>
+            The OpenFlow paradigm embraces third-party development
+            efforts, and therefore suffers from potential
+            attacks that usurp the excessive privileges
+            of control plane applications. Such privilege abuse
+            could lead to various attacks impacting the entire
+            administrative domain. In this project, we design
+            SDNShield, an access control system that helps
+            network administrators to express and enforce only
+            the minimum required privileges to individual controller
+            applications. SDNShield achieves this goal
+            through (i) fine-grained permission abstractions that
+            allow accurate representation of application behavior
+            boundary, and (ii) automatic security policy
+            reconciliation that incorporate security policies specified
+            by administrators into the requested permissions.
+            Through prototype implementation, we verify
+            its effectiveness against proof-of-concept attacks.
+            Performance evaluation shows that SDNShield introduces
+            negligible runtime overhead.
+        </p>
+    </blockquote>
+
+
+    <h2>Publication</h2>
+    <ul>
+        <li>Xitao Wen, Yan Chen, Chengchen Hu, Chao Shi, Yi Wang,
+            <a href="papers/permof_hotsdn.pdf">
+                <i>"Towards A Secure Controller Platform for OpenFlow Application"</i>
+            </a>, short paper in <i>HotSDN 2013</i>, Hong Kong, China, August 2013.
+        </li>
+        <li>Xitao Wen, Yan Chen, Chengchen Hu, Chao Shi, Yi Wang,
+            <a href="papers/permof_nsdi_poster.pdf">
+                <i>"Towards A Secure Controller Platform for OpenFlow Application"</i>
+            </a>, poster paper in <i>NSDI 2013</i>, Lombard, IL, April 2013.
+        </li>
+    </ul>
+
+
+    <h2>Patent</h2>
+    <ul>
+        <li>
+            "The Method for Control-layer Application Access Control and Controller", Pending China Patent: CN
+            201510064799.5.
+        </li>
+    </ul>
+
+    <div class="row">
+        <div class="col-md-4">
+            <h2>People</h2>
+            <ul>
+                <li><a href="http://www.cs.northwestern.edu/~xwe334/">Xitao Wen (Northwestern University)</a></li>
+                <li>Bo Yang (Zhejiang University)</li>
+                <li>Chao Shi</li>
+                <li><a href="http://www.cs.northwestern.edu/~ychen/"> Yan Chen (Northwestern University)</a></li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <h2>Collaborators</h2>
+            <ul>
+                <li><a href="http://nskeylab.xjtu.edu.cn/people/cchu">Chengchen Hu</a> (Xi'an Jiaotong University)</li>
+                <li>Yi Wang (Tsinghua University)</li>
+                <li>Bin Liu (Tsinghua University)</li>
+            </ul>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+
+</div>
+</body>
+</html>
